@@ -152,7 +152,7 @@ glm.pred[glm.probs >.5]=1 # converting those to 1 whose corresponding probabilit
 table (glm.pred , test$mpg_binary) # creating a confusion matrix
 (48+44)/98 # [1] 0.9387755, so the accuracy is good enough!
 # Thus, test error for Logistic Regression= 0.0612245 or 6.12%
-
+# Here, I have assumed a threshold value as 0.5. You can try using different threshold values and it will cause accuracy to change.
 
 ############### Random Forest #################
 # After trying Logistic Regression, I would like to apply Random Forest
