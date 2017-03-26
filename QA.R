@@ -129,8 +129,6 @@ nrow(test) #98
 nrow(Cars_mileage) #392
 
 
-# As we have Numeric a well as Categorical data, using KNN and Random Forest would be a good choice
-
 # Firstly, we will drop some columns which are of no use and would otherwise overfit the data
 Cars_mileage <- subset(Cars_mileage, select = -c(mpg,name) )
 dim(Cars_mileage)
